@@ -1,6 +1,6 @@
 steps:
   - name: ubuntu
-    args: ["echo", "$_JSON", ">>", "lol.json"]
+    args: ["echo", "$_JSON", ">", "lol.json"]
   - name: ubuntu
     args: ["ls"]
   - name: node
