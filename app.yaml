@@ -1,5 +1,6 @@
 runtime: python37
 entrypoint: python main.py
+service: flask-react-test
 
 handlers:
   - url: /
