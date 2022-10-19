@@ -1,3 +1,14 @@
 runtime: python37
 entrypoint: python main.py
 service: flask-react-test
+
+handlers:
+  # frontend
+  # Serve all static files with url ending with a file extension
+  - url: /(.*\..+)$
+    static_files: build/\1
+    upload: build/(.*\..+)$
+
+  # backend
+  - url: /.*
+    script: auto

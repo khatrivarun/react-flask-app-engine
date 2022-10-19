@@ -1,7 +1,7 @@
 const App = () => {
   return (
     <div className='App'>
-      <h1>lol</h1>
+      <h1>Hello from React and Flask</h1>
       <button
         onClick={async () => {
           const response = await fetch('/hello');
@@ -9,7 +9,7 @@ const App = () => {
           console.log(await response.json());
         }}
       >
-        Click
+        Click Flask
       </button>
     </div>
   );
