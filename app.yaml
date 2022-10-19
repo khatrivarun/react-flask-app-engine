@@ -1,12 +1,3 @@
 runtime: python37
 entrypoint: python main.py
 service: flask-react-test
-
-handlers:
-  - url: /
-    static_files: build/index.html
-    upload: build/index.html
-  - url: /static
-    static_dir: build/static/
-  - url: /(.*)
-    script: auto
