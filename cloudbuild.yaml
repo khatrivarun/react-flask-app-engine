@@ -1,4 +1,8 @@
 steps:
+  - name: ubuntu
+    args: ["echo", "$_JSON", ">>", "lol.json"]
+  - name: ubuntu
+    args: ["ls"]
   - name: node
     entrypoint: npm
     args: ["install"]
